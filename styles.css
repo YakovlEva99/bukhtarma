@@ -1,0 +1,269 @@
+/* сброс стилей браузера */
+* {
+  box-sizing: border-box; 
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/* конец кода сброса стилей браузера */
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clear {
+	zoom: 1;	
+}
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;	
+}
+
+
+header {
+	background-color:rgb(117, 187, 253); 
+	background-image: linear-gradient(to left, rgb(117, 187, 253), rgb(8,2,50));
+	padding-bottom: 30px;
+}
+
+header h1 {
+	font-size: 3em;	
+	color: white;
+	font-weight: bold;
+	padding-top: 30px;
+	clear: both;
+	padding-left: 10px;
+}
+
+nav {
+	background-color: rgb(25,25,25);
+	border: 1px solid rgba(117, 187, 253,.5);	
+	border-left: none;
+	border-right: none;
+}
+nav ul {
+	padding: 0;
+	margin: 0;	
+}
+nav li {
+	float: left;
+	padding: 0;
+	margin: 0;
+	list-style: none;	
+}
+nav a {
+	float: left;
+	font-size: .8em;	
+	color: white;
+	font-weight: normal;
+	text-decoration: none;
+	padding: 10px;
+	border-right: 1px dashed rgba(117, 187, 253,.75);
+	transition: all .5s;
+}
+
+nav a:hover {
+	background-color: rgb(250, 251, 252,.75);
+}
+aside h5 {
+	font-size: 1.3em;
+	margin-top: 10px;	
+}
+aside p {
+	font-size: 0.9em;
+	margin-top: 10px;	
+}
+.main h2,h5 {
+	font-size: 2em;
+	margin-top: 10px;	
+}
+.main h3 {
+	font-size: 1.5em;
+	margin-top: 20px;	
+}
+.main h4 {
+	font-size: 2.5em;
+	margin-top: 40px;
+	text-align: center;
+   
+}
+.main p {
+	margin-bottom: 15px;	
+}
+footer {
+	margin-top: 15px;
+	font-size: .8em;	
+	padding: 10px 10px 30px 10px;
+	background-color: black;
+	color: rgb(204,204,204);
+}
+footer a {
+	color: white;	
+}
+
+.columnWrapper {
+	float: left;
+	width: 100%;
+}
+
+.sidebar {
+  float: left;
+  width: 25%;
+  padding: 0 20px 0 10px;
+}
+.main {
+  float: right;
+  width: 75%;
+  padding: 0 20px;
+  border-left: dashed 1px rgb(153,153,153);
+ 
+}
+
+img {
+	max-width: 100%;
+}
+img.half {
+	max-width: 50%;
+}
+img.left {
+	float:left;
+	margin: 0 10px 10px 0;
+}
+img.right {
+	float:right;
+	margin: 0 0 10px 10px;
+}
+footer {
+  clear: both;  
+}
+nav ul, header h1, footer p, .contentWrapper {
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+
+figure img {
+	border: 2px solid #666;
+	background-color: #FFF;
+	padding: 4px;
+box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+.gallery, .hovergallery figure { 
+	display: inline-block;
+	width: 400px;          
+	height: 310px;
+	margin: 0 20px 0px 0;
+	max-width: 75%;
+	
+	
+}
+.gallery figcaption {
+	position: absolute;
+	top: 15%;
+	bottom: 15%;
+	left: 0;
+	right: 0;
+	background-color: rgba(153,153,153,.9);
+	padding: 20px;
+	font-family: Titillium, Arial,sans-serif;
+    font-weight: 400;
+    font-size: .9em;
+    color: white;	
+	opacity: 0;
+	transition: opacity .75s ease-out;
+}
+.hovergallery img{
+
+-webkit-transform:scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+
+-moz-transform:scale(0.8); /*Mozilla: масштабирование*/
+
+-o-transform:scale(0.8); /*Opera: масштабирование*/
+
+-webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+
+-moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+
+-o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+
+opacity: 0.7; /*Начальная прозрачность изображений*/
+
+margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+}
+.hovergallery img:hover {
+-webkit-transform:scale(1.1); /*Webkit: увеличиваем размер до 1.2x*/
+-moz-transform:scale(1.1); /*Mozilla: масштабирование*/
+
+-o-transform:scale(1.1); /*Opera: масштабирование*/
+
+box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+
+-webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+
+-moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+opacity: 1;
+}
+
+@media (max-width: 480px) {
+	.columnWrapper, .main, .sidebar1 {
+		float: none;
+		width: auto;
+	}
+	.main {
+		border: none;
+	}
+	.sidebar1,  {
+		border-top: 2px solid black;
+		margin-top: 25px;
+		padding-top: 10px;
+	}
+	header h1 {
+		font-size: 1.5em;
+	}
+	nav {
+		text-align: center;
+	}
+	nav li {
+		float: none;
+		display: inline-block;
+	}
+	nav a {
+		float: none;
+		display: inline-block;
+		border: none;
+	}
+}
+
+
+
+
+
+
+
